@@ -3,9 +3,9 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="flex flex-row  h-full">
-      <Header className="basis-1/4 h-full" />
-      <Main className="flex-1" />
+    <div>
+      <Header className="flex justify-center" />
+      <Main className="flex justify-center" />
     </div>
   );
 }
