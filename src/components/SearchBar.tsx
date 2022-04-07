@@ -4,7 +4,7 @@ const SearchBar = () => {
     <div className="relative">
       <input
         type="text"
-        className="h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
+        className="h-14 w-full pr-8 pl-5 rounded z-0 focus:shadow-lg focus:shadow-sky-400 focus:outline-none"
         placeholder="Buscar entrada de blog..."
       />
       <img

@@ -13,7 +13,7 @@ import TypescriptIcon from "../icons/TypescriptIcon";
 
 const Stack = () => {
   return (
-    <div className="max-w-sm rounded px-6 py-4 mt-10 transition ease-in-out delay-150 hover:shadow-lg duration-300 hover:shadow-emerald-400 grayscale hover:grayscale-0">
+    <div className="max-w-sm dark:text-white dark:grayscale-0 rounded px-6 py-4 mt-10 transition ease-in-out delay-150 hover:shadow-lg duration-300 hover:shadow-sky-400 grayscale hover:grayscale-0">
       <p className="text-xl font-bold text-center">Tecnologías</p>
       <div className="flex justify-between mt-4">
         <ReactIcon className="block h-10 w-10 fill-cyan-400" />
