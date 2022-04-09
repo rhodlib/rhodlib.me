@@ -1,4 +1,5 @@
 import search from "../icons/search.svg";
+
 const SearchBar = () => {
   return (
     <div className="relative">

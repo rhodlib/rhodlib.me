@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useTransition, animated, config } from "react-spring";
+import { useTransition, animated } from "react-spring";
 import { quotes } from "../staticQuotes";
 import QuotesDisplay from "./QuotesDisplay";
 
