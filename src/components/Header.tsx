@@ -1,31 +1,51 @@
-import DevIcon from "../icons/DevIcon";
-import GithubIcon from "../icons/GithubIcon";
-import LinkedinIcon from "../icons/LinkedinIcon";
-import TwitterIcon from "../icons/TwitterIcon";
 import Link from "./Link";
+import classNames from "classnames";
+import { useState } from "react";
 
 const Header = ({ ...props }) => {
+  const [active, setActive] = useState(0);
+
   return (
     <div {...props}>
-      <div className="flex z-10 py-4 justify-around fixed w-full">
-        <h1 className="text-2xl text-blue-400 self-center font-bold">
-          Rhodlib
-        </h1>
-        <div className="flex self-center">
-          <Link href="https://dev.to/rhodlib">
-            <DevIcon className="block h-8 w-8 mx-2 fill-blue-400 transition ease-in-out delay-150 hover:fill-gray-400 duration-300" />
-          </Link>
-          <Link href="https://github.com/rhodlib">
-            <GithubIcon className="block h-8 w-8 mx-2 fill-blue-400 transition ease-in-out delay-150 hover:fill-purple-400 duration-300" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/rhodlib/">
-            <LinkedinIcon className="block h-8 w-8 mx-2 fill-blue-400 transition ease-in-out delay-150 hover:fill-blue-400 duration-300" />
-          </Link>
-          <Link href="https://twitter.com/rhodlib">
-            <TwitterIcon className="block h-8 w-8 mx-2 fill-blue-400 transition ease-in-out delay-150 hover:fill-cyan-400 duration-300" />
-          </Link>
-        </div>
-      </div>
+      <h1 className="text-5xl font-bold text-primary">Rhodlib</h1>
+      <nav className="flex text-4xl text-primary items-center">
+        <Link
+          className={classNames(
+            "mx-1 py-2 px-4",
+            active === 0 ? "bg-primary text-dark rounded-lg" : ""
+          )}
+          onClick={() => setActive(0)}
+        >
+          Inicio
+        </Link>
+        <Link
+          className={classNames(
+            "mx-1 py-2 px-4",
+            active === 1 ? "bg-primary text-dark rounded-lg" : ""
+          )}
+          onClick={() => setActive(1)}
+        >
+          Blog
+        </Link>
+        <Link
+          className={classNames(
+            "mx-1 py-2 px-4",
+            active === 2 ? "bg-primary text-dark rounded-lg" : ""
+          )}
+          onClick={() => setActive(2)}
+        >
+          Proyectos
+        </Link>
+        <Link
+          className={classNames(
+            "mx-1 py-2 px-4",
+            active === 3 ? "bg-primary text-dark rounded-lg" : ""
+          )}
+          onClick={() => setActive(3)}
+        >
+          Contacto
+        </Link>
+      </nav>
     </div>
   );
 };
