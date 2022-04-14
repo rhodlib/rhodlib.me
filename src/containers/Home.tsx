@@ -1,3 +1,5 @@
+import Logo from "../icons/Logo";
+
 const Home = ({ ...props }) => {
   return (
     <div {...props}>
@@ -6,7 +8,9 @@ const Home = ({ ...props }) => {
         <li className="my-8 text-center">Geek</li>
         <li className="my-8 text-center">Coffee lover</li>
       </ul>
-      <div className="w-60 h-60 rounded-full bg-primary"></div>
+      <div className="w-96 h-96 fill-primary">
+        <Logo />
+      </div>
     </div>
   );
 };

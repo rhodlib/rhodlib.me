@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Link: FC<JSX.IntrinsicElements["a"]> = ({ children, ...props }) => {
   return (
-    <a {...props} rel="noopener noreferrer" target="_blank">
+    <a {...props} rel="noopener noreferrer">
       {children}
     </a>
   );

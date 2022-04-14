@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -6,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         gela: ["Gelasio", ...defaultTheme.fontFamily.sans],
+      },
+      backgroundImage: {
+        podcast: "url('./statics/podcast-banner.png')",
       },
     },
     colors: {
@@ -17,6 +21,7 @@ module.exports = {
       dark: "#744253",
       slate: "#94a3b8",
       white: "#FFF",
+      ...colors,
     },
   },
   plugins: [],

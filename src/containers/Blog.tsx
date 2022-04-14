@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { useState } from "react";
-import Card from "../components/Card";
 
 const Blog = ({ ...props }) => {
   const [active, setActive] = useState(0);
@@ -48,56 +47,7 @@ const Blog = ({ ...props }) => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-wrap justify-end w-4/5 h-full">
-          <Card
-            title="Articulo 1"
-            date="22/3/2022"
-            containerProps={{
-              className:
-                "w-80 h-90 m-10 flex flex-col justify-center items-center bg-slate rounded-lg",
-            }}
-          />
-          <Card
-            title="Articulo 2"
-            date="22/3/2022"
-            containerProps={{
-              className:
-                "w-80 h-90 m-10   flex flex-col justify-center items-center bg-slate rounded-lg",
-            }}
-          />
-          <Card
-            title="Articulo 3"
-            date="22/3/2022"
-            containerProps={{
-              className:
-                "w-80 h-90 m-10   flex flex-col justify-center items-center bg-slate rounded-lg",
-            }}
-          />
-          <Card
-            title="Articulo 4"
-            date="22/3/2022"
-            containerProps={{
-              className:
-                "w-80 h-90 m-10   flex flex-col justify-center items-center bg-slate rounded-lg",
-            }}
-          />
-          <Card
-            title="Articulo 5"
-            date="22/3/2022"
-            containerProps={{
-              className:
-                "w-80 h-90 m-10  flex flex-col justify-center items-center bg-slate rounded-lg",
-            }}
-          />
-          <Card
-            title="Articulo 6"
-            date="22/3/2022"
-            containerProps={{
-              className:
-                "w-80 h-90 m-10   flex flex-col justify-center items-center bg-slate rounded-lg",
-            }}
-          />
-        </div>
+        <div className="flex flex-wrap justify-end w-4/5 h-full"></div>
       </div>
     </>
   );

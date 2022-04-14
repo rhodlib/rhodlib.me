@@ -1,3 +1,5 @@
+import Link from "./Link";
+
 const Footer = ({ ...props }) => {
   return (
     <div {...props}>
@@ -6,10 +8,26 @@ const Footer = ({ ...props }) => {
       </span>
       <nav>
         <ul className="flex justify-center items-center text-primary text-2xl">
-          <li className="mx-5 hover:border-b-2">Github</li>
-          <li className="mx-5 hover:border-b-2">Twitter</li>
-          <li className="mx-5 hover:border-b-2">Dev.to</li>
-          <li className="mx-5 hover:border-b-2">Linkedin</li>
+          <li className="mx-5 hover:border-b-2">
+            <Link href="https://github.com/rhodlib" target="_blank">
+              Github
+            </Link>
+          </li>
+          <li className="mx-5 hover:border-b-2">
+            <Link href="https://twitter.com/rhodlib" target="_blank">
+              Twitter
+            </Link>
+          </li>
+          <li className="mx-5 hover:border-b-2">
+            <Link href="https://dev.to/rhodlib" target="_blank">
+              Dev.to
+            </Link>
+          </li>
+          <li className="mx-5 hover:border-b-2">
+            <Link href="https://www.linkedin.com/in/rhodlib/" target="_blank">
+              Linkedin
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

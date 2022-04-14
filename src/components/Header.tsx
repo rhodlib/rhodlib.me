@@ -14,6 +14,7 @@ const Header = ({ ...props }) => {
             "mx-1 py-2 px-4",
             active === 0 ? "bg-primary text-dark rounded-lg" : ""
           )}
+          href="#home"
           onClick={() => setActive(0)}
         >
           Inicio
@@ -23,6 +24,7 @@ const Header = ({ ...props }) => {
             "mx-1 py-2 px-4",
             active === 1 ? "bg-primary text-dark rounded-lg" : ""
           )}
+          href="#blog"
           onClick={() => setActive(1)}
         >
           Blog
@@ -32,6 +34,7 @@ const Header = ({ ...props }) => {
             "mx-1 py-2 px-4",
             active === 2 ? "bg-primary text-dark rounded-lg" : ""
           )}
+          href="#projects"
           onClick={() => setActive(2)}
         >
           Proyectos
@@ -41,6 +44,7 @@ const Header = ({ ...props }) => {
             "mx-1 py-2 px-4",
             active === 3 ? "bg-primary text-dark rounded-lg" : ""
           )}
+          href="#contact"
           onClick={() => setActive(3)}
         >
           Contacto
