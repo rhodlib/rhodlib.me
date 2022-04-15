@@ -1,5 +1,4 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -8,20 +7,16 @@ module.exports = {
       fontFamily: {
         gela: ["Gelasio", ...defaultTheme.fontFamily.sans],
       },
-      backgroundImage: {
-        podcast: "url('./statics/podcast-banner.png')",
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        primary: "#b4cded",
+        secondary: "#f0f4ef",
+        contrast: "#344966",
+        dark: "#0d1821",
+        slate: "#94a3b8",
+        white: "#FFF",
       },
-    },
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      primary: "#d7bea8",
-      secondary: "#b49286",
-      contrast: "#c78283",
-      dark: "#744253",
-      slate: "#94a3b8",
-      white: "#FFF",
-      ...colors,
     },
   },
   plugins: [],
