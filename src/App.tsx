@@ -1,20 +1,22 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import Home from "./containers/Home";
+import Layout from "./containers/Layout";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="h-full">
-      <Navbar className="flex w-full justify-between bg-dark fixed" />
-      <Home
-        className="bg-dark h-screen w-full flex justify-around items-center"
-        id="home"
-      />
-      {/* <Footer
-        className="flex bottom-0 w-full fixed justify-between items-center px-20 py-5 bg-dark"
-        id="contact"
-      /> */}
-    </div>
+    <Layout>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              className="flex flex-col md:flex-row justify-center md:justify-around items-center bg-dark h-screen"
+              id="home"
+            />
+          }
+        />
+      </Routes>
+    </Layout>
   );
 }
 
