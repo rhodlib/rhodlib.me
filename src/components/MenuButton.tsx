@@ -14,6 +14,7 @@ const MenuButton: FC<MenuButtonProperties> = ({
   return (
     <div {...containerProps}>
       <button
+        aria-label="menu button"
         className={classNames("relative", open ? "group" : "")}
         onClick={onClick}
       >
