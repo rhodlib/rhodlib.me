@@ -1,4 +1,4 @@
-import Link from "./Link";
+import Anchor from "./Anchor";
 
 const links = [
   {
@@ -29,9 +29,9 @@ const Footer = ({ ...props }) => {
               key={`footer-link-${i}`}
               className="mx-2 border-b-2 border-b-dark hover:border-b-2 hover:border-b-primary"
             >
-              <Link href={obj.value} target="_blank">
+              <Anchor href={obj.value} target="_blank">
                 {obj.label}
-              </Link>
+              </Anchor>
             </li>
           ))}
         </ul>

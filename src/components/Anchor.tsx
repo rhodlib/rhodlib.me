@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-const Link: FC<JSX.IntrinsicElements["a"]> = ({ children, ...props }) => {
+const Anchor: FC<JSX.IntrinsicElements["a"]> = ({ children, ...props }) => {
   return (
     <a {...props} rel="noopener noreferrer">
       {children}
@@ -8,4 +8,4 @@ const Link: FC<JSX.IntrinsicElements["a"]> = ({ children, ...props }) => {
   );
 };
 
-export default Link;
+export default Anchor;
